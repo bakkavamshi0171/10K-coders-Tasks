@@ -4,63 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-   
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color:white;
+            background-color:rgb(70, 70, 235);
+            font-size: 45px;
+            padding:20px;
+            text-align: center;
+            margin: 0;
+        }
+        .screen{
+            text-align: center;
+            background-color:skyblue;
+            margin: 0;
+            padding: 20px;
+        }
+        iframe{
+            height:450px;
+            width: 800px;
+        }
+        .list{
+            background-color:skyblue;
+            margin:0;
+        }
+        .list-main{
+            margin:0;
+            padding: 20px;
+        }
+        .list-items{
+            display: inline-block;
+            padding: 25px;
+            margin-left: 50px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+           color: blue
+           ;
+        }
+        a{
+            text-decoration: none;
+            color:blue
+        }
+        li{
+            list-style:disc;
+        }
+        p{
+            color:blue;
+            font-size:x-large;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    
 </head>
 <body>
+   
     <div class="container">
-    <div class="header">
-        <h1>Movie Trailer App</h1>
-    </div>
-    
-    <div class="trailer-display">
-        <iframe class="tariler-screen" name="screen" ></iframe>
-    </div>
-    
-    <div class="movie-section">
-        <div class="movie-poster">
-            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOq__dQ5hjeSkqJa8ZJeiRmnpqghujZ5J0JQ&s" download>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOq__dQ5hjeSkqJa8ZJeiRmnpqghujZ5J0JQ&s" >
-                <p>Download Iamge</p>
-            </a>
+        <h1>Travel Page</h1>
+        <div class="screen">
+            <img src="https://img.freepik.com/free-photo/view-travel-items-assortment-still-life_23-2149617645.jpg" name="screen" height="450">
+            <P>Explore The World, shortest Period of Life</P>
+        </div>
+        <div class="list">
+            <ol class="list-main">
+                <li class="list-items">
+                    <details>
+                        <summary><a href="https://www.intrepidtravel.com/adventures/wp-content/uploads/2015/02/Intrepid-Travel-Chile-Patagonia-trekking-002.jpg" target="screen" download>Trekking</a></summary>
+                        <ul type="circle">
+                            <li>Sunrise</li>
+                            <li>Sunset</li>
+                            <li>Break Fast</li>
+                        </ul>
+                    </details> 
+                </li>
+                <li class="list-items">
+                    <details>
+                        <summary>Activities</summary>
+                        <ul>
+                            <li><video controls muted height="200px">
+                                <source src="../images/4158839-uhd_3840_2160_24fps.mp4" >
+                                </video>
+                            </li>
+                            <li>Camping</li>
+                            <li>Bonfire</li>
+                            <li><ul>Sports<li>Box cricket,Music,Dance..etc</li></ul></li>
+                        </ul>
+                    </details> 
+                </li>
+                <li class="list-items">
+                    <details>
+                        <summary>Listen a song and chill</summary>
+                        <ul>
+                            <li><audio controls loop><source src="../images/[iSongs.info] 04 - Anuvanuvuu (1).mp3"></audio></li>
+                            <li>Music</li>
+                            <li>Skills showcase</li>
+                            <li>Funtime</li>
+                        </ul>
+                    </details> 
+                </li>
+                <li class="list-items"> 
+                    <details><summary>Packages</summary>
+                        <dl>
+                            <dt>1 Persons</dt>
+                            <dd>9999/-</dd>
+                            <dt>2 Persons</dt>
+                            <dd>17999/-</dd>
+                            <dt>4 Persons</dt>
+                            <dd>32,999/-</dd>
+                        </dl>
+                    </details>
+                </li>
+            </ol>
+        </div>
 
-            <a height="514" href="https://www.youtube.com/embed/9Im1q4gvk1M?autoplay=1&" allow="autoplay" title="Salaar | Official Trailer | Prabhas | Prithviraj | Shruti Haasan | 20th Jan | Netflix India" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  target="screen"><span class="watch-trailer">Watch Trailer</span></span></a>
-            <a href="https://en.wikipedia.org/wiki/Salaar:_Part_1_%E2%80%93_Ceasefire" target="screen" ><p class="wikipedia">About the movie</p></a>
-        </div>
-        <div class="movie-poster">
-            <a href="https://static.toiimg.com/photo/90419196.cms" download>
-                <img src="https://static.toiimg.com/photo/90419196.cms"  height="300">
-                <p>Download Iamge</p>
-            </a>
-            <a  height="514" href="https://www.youtube.com/embed/qrtcNKCc-fo?autoplay=1&" allow="autoplay" title="Dasara Telugu Teaser | Nani | Keerthy Suresh | Santhosh  Narayanan | Srikanth Odela | SLV Cinemas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen target="screen"><span class="watch-trailer">Watch Trailer</span></a>
-            <a href="https://en.wikipedia.org/wiki/Dasara_(film)#:~:text=The%20film%20is%20set%20in,over%20%E2%82%B9117.50%20crore%20worldwide." target="screen" ><p class="wikipedia">About the movie</p></a>
-        </div>
-        <div class="movie-poster">
-            <a href="https://preview.redd.it/h3wq2nn0pjtb1.jpg?auto=webp&s=838ecdf020c051fdbe91a83ca6a449cf0824da4f" download>
-                <img src="https://preview.redd.it/h3wq2nn0pjtb1.jpg?auto=webp&s=838ecdf020c051fdbe91a83ca6a449cf0824da4f">
-                <p>Download Iamge</p>
-            <a>
-            <a  height="514" href="https://www.youtube.com/embed/y1-w1kUGuz8?autoplay=1&" title="Kalki 2898 AD Trailer - Telugu | Prabhas | Amitabh Bachchan | Kamal Haasan | Deepika | Nag Ashwin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen target="screen"><span class="watch-trailer">Watch Trailer</span></a>
-            <a href="https://en.wikipedia.org/wiki/Kalki_2898_AD" target="screen" ><p class="wikipedia">About the movie</p></a>
-        </div>
-        <div class="movie-poster">
-            <a href="https://files.prokerala.com/movies/pics/800/birthday-poster-of-sai-pallavi-movie-113601.jpg" download>
-                <img src="https://files.prokerala.com/movies/pics/800/birthday-poster-of-sai-pallavi-movie-113601.jpg">
-                <p>Download Iamge</p>
-            <a>
-            <a  height="514" href="https://www.youtube.com/embed/1yH_eOxpkwo?autoplay=1&" allow="autoplay" title="#LoveStory Theatrical Trailer | Naga Chaitanya | Sai Pallavi | Sekhar Kammula | Pawan Ch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen target="screen" ><span class="watch-trailer">Watch Trailer</span></a>
-            <a href="https://en.wikipedia.org/wiki/Love_Story_(2021_film)" target="screen" ><p class="wikipedia">About the movie</p></a>
-        </div>
-        <div class="movie-poster">
-            <a href="https://wallpapercave.com/wp/wp6908040.jpg" download>
-                <img src="https://wallpapercave.com/wp/wp6908040.jpg">
-                <p>Download Iamge</p>
-            <a>
-            <a height="514" href="https://www.youtube.com/embed/eBcYKDUT8fs?autoplay=1&"  allow="autoplay" title="V - Official Trailer | Nani, Sudheer Babu, Aditi Rao Hydari, Nivetha Thomas | Sept 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen target="screen"><span class="watch-trailer">Watch Trailer</span></a>
-            <a href="https://en.wikipedia.org/wiki/V_(2020_film)" target="screen" ><p class="wikipedia">About the movie</p></a>
-        </div>
     </div>
-</div>
 </body>
 </html>
